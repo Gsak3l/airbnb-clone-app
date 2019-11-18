@@ -7,7 +7,7 @@
   <!--font-awesome-->
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <!--jquery-->
-  <script type="text/javascript" src="./jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="./js/jquery-3.3.1.slim.min.js"></script>
   <!--bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,9 +23,10 @@
   <!--roboto condensed-->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i&display=swap&subset=greek"
     rel="stylesheet">
+
 </head>
 
-<body>
+<body onload="randomPrice()">
   <!--navbar starts-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
@@ -75,7 +76,7 @@
               <h5> <a href="#" class="text-dark">Red paint cup</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0">120€/Βραδιά</p>
+                <p class="small mb-0"></p>
                 <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div>
               </div>
             </div>
@@ -255,6 +256,8 @@
       <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Καταχωρηση Τωρα</a></div>
     </div>
   </div>
+
+  <script type="text/javascript" src="./js/app.js"></script>
 </body>
 
 </html>
