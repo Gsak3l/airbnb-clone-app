@@ -26,7 +26,7 @@
 
 </head>
 
-<body onload="randomPrice()">
+<body onload="generateRooms()">
   <!--navbar starts-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">
@@ -67,16 +67,15 @@
       <!--header ends-->
 
       <!--rooms section starts-->
-      <div class="row">
-
+      <div class="row" id="roomSection">
         <!--domatio pros enoikiasi mono-->
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
           <div class="bg-white rounded shadow-sm"><img src="./img/1.jpg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
-              <h5> <a href="#" class="text-dark">Red paint cup</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <h5> <a href="#" class="text-dark">Deluxe Villa, close to the sea</a></h5>
+              <p class="small text-muted mb-0">6 Επισκέπτες • 3 Υπνοδωμάτια • 2 Μπάνια • Πισίνα</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0"></p>
+                <p class="small mb-0">140€/Διανυκτέρευση</p>
                 <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div>
               </div>
             </div>
@@ -88,10 +87,9 @@
         <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
           <div class="bg-white rounded shadow-sm"><img src="./img/2.jpg" alt="" class="img-fluid card-img-top">
             <div class="p-4">
-              <h5> <a href="#" class="text-dark">Blorange</a></h5>
-              <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0"></p>
+              <h5> <a href="#" class="text-dark">Urban Cozy Studios</a></h5>
+              <p class="small text-muted mb-0">4 Επισκέπτες • 2 Υπνοδωμάτια • 1 Μπάνιο • Wifi<div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">100€/Διανυκτέρευση</p>
                 <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Ανταλλαγή</div>
               </div>
             </div>
@@ -106,7 +104,7 @@
               <h5> <a href="#" class="text-dark">DOSE Juice</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0">90€/Βραδιά</p>
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
                 <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
               </div>
             </div>
@@ -136,7 +134,7 @@
               <h5> <a href="#" class="text-dark">DOSE Juice</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0">90€/Βραδιά</p>
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
                 <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
               </div>
             </div>
@@ -166,7 +164,7 @@
               <h5> <a href="#" class="text-dark">DOSE Juice</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0">90€/Βραδιά</p>
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
                 <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
               </div>
             </div>
@@ -196,7 +194,7 @@
               <h5> <a href="#" class="text-dark">Red paint cup</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0">120€/Βραδιά</p>
+                <p class="small mb-0">120€/Διανυκτέρευση</p>
                 <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div>
               </div>
             </div>
@@ -211,7 +209,7 @@
               <h5> <a href="#" class="text-dark">DOSE Juice</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0">90€/Βραδιά</p>
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
                 <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
               </div>
             </div>
@@ -226,7 +224,7 @@
               <h5> <a href="#" class="text-dark">DOSE Juice</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0">90€/Βραδιά</p>
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
                 <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
               </div>
             </div>
@@ -241,23 +239,21 @@
               <h5> <a href="#" class="text-dark">Red paint cup</a></h5>
               <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
               <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-                <p class="small mb-0">120€/Βραδιά</p>
+                <p class="small mb-0">120€/Διανυκτέρευση</p>
                 <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div>
               </div>
             </div>
           </div>
         </div>
         <!--telos domatiou pros enoikiasi mono-->
-
-
-
       </div>
       <!--rooms section ends-->
       <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Καταχωρηση Τωρα</a></div>
     </div>
   </div>
-
   <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="./js/roomGenerator.js"></script>
+
 </body>
 
 </html>
