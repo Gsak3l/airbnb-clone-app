@@ -13,9 +13,24 @@ rooms[10] = '<!--domatio eite pros antallagi eite pros enoikiasi--><div class="c
 rooms[11] = '<!--domatio pros enoikiasi mono--><div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="./img/12.jpg" alt="" class="img-fluid card-img-top"> <div class="p-4"> <h5> <a href="#" class="text-dark">Perfect Placed City Apartment</a></h5> <p class="small text-muted mb-0">3 Επισκέπτες • 1 Υπνοδωμάτιο • 2 Κρεβάτια • 1 Μπάνιο</p> <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> <p class="small mb-0">120€/Διανυκτέρευση</p> <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div> </div> </div> </div> </div><!--telos domatiou pros enoikiasi mono-->';
 
 function generateRooms() {
-    var allRooms = "";
-    for (var i = 0; i < rooms.length; i++) {
-        allRooms += rooms[i];
-    }
+    var copiedRooms = rooms;
+    var allRooms = randomize(copiedRooms);
     document.getElementById('roomSection').innerHTML = allRooms;
+}
+
+function randomize(roomArray) {
+    var currentIndex = roomArray.length,
+        temporaryValue, randomIndex;
+    var total = "";
+    while (0 != currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = roomArray[currentIndex];
+        roomArray[currentIndex] = roomArray[randomIndex];
+        roomArray[randomIndex] = temporaryValue;
+    }
+    for (var i = 0; i < roomArray.length; i++) {
+        total += roomArray[i];
+    }
+    return total;
 }
