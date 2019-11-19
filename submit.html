@@ -2,73 +2,119 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Dooking, an app not by Booking</title>
-  <!--font-awesome-->
-  <link rel="stylesheet" href="./css/font-awesome.min.css">
-  <!--jquery-->
-  <script type="text/javascript" src="./js/jquery-3.3.1.slim.min.js"></script>
-  <!--bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <!--Vollkorn font-->
-  <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Dooking, an app not by Booking</title>
+    <!--font-awesome-->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!--jquery-->
+    <script type="text/javascript" src="./js/jquery-3.3.1.slim.min.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!--Vollkorn font-->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body onload="generateRooms()">
-  <!--navbar starts-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="./index.html">
-      <h1 style="color: #6495ed;">Dooking</h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">
-            <h5>Διαθέσιμα Δωμάτια</h5>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./submit.html">
-            <h5>Προσθήκη Δωματίου</h5>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--navbar ends-->
-  <div class="container-fluid">
-    <div class="px-lg-5">
-
-      <!--header starts-->
-      <div class="row py-5">
-        <div class="col-lg-12 mx-auto">
-          <div class="text-white p-5 shadow-sm rounded banner">
-            <h1 class="display-4" style="color:#000;"><b>Προσθήκη Δωματίου</b></h1>
-          </div>
+    <!--navbar starts-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">
+            <h1 style="color: #6495ed;">Dooking</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">
+                        <h5>Διαθέσιμα Δωμάτια</h5>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./submit.html">
+                        <h5>Προσθήκη Δωματίου</h5>
+                    </a>
+                </li>
+            </ul>
         </div>
-      </div>
-      <!--header ends-->
+    </nav>
+    <!--navbar ends-->
+    <div class="container-fluid">
+        <div class="px-lg-5">
 
-  
-  <!--my own javascript-->
-  <script type="text/javascript" src="./js/app.js"></script>
-  <script type="text/javascript" src="./js/roomGenerator.js"></script>
+            <!--header starts-->
+            <div class="row py-5">
+                <div class="col-lg-12 mx-auto">
+                    <div class="text-white p-5 shadow-sm rounded banner">
+                        <h1 class="display-4" style="color:#000;"><b>Προσθήκη Δωματίου</b></h1>
+                    </div>
+                </div>
+            </div>
+            <!--header ends-->
+
+            <!--submit form starts-->
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Επώνυμο</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Όνομα</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Διεύθυνση Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="email@someone.yoho">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Αριθμός Ατόμων</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Σχόλια</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+
+            </div>
+            <!--submit form ends-->
+
+
+            <!--my own javascript-->
+            <script type="text/javascript" src="./js/app.js"></script>
+            <script type="text/javascript" src="./js/roomGenerator.js"></script>
 </body>
 
 </html>
