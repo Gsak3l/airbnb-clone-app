@@ -1,6 +1,9 @@
 function aleeert() {
     console.log("i am here");
 }
+function addRoom() {
+    rooms[12] = '<h1>I AM THE HERO OVER HERE</h1>';
+}
 $(document).ready(function () {
     $(document).on('change', '.btn-file :file', function () {
         var input = $(this),
@@ -32,7 +35,6 @@ $(document).ready(function () {
             reader.readAsDataURL(input.files[0]);
         }
     }
-
     $("#imgInp").change(function () {
         readURL(this);
     });

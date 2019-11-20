@@ -17,9 +17,9 @@ function generateRooms() {
     var allRooms = randomize(copiedRooms);
     document.getElementById('roomSection').innerHTML = allRooms;
     const images = document.getElementsByTagName('img');
-    for(var i = 0; i < images.length; i++) {
+    for (var i = 0; i < images.length; i++) {
         images[i].style.cursor = "pointer";
-        images[i].addEventListener("click", function(){
+        images[i].addEventListener("click", function () {
             aleeert();
         });
     }

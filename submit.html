@@ -68,7 +68,7 @@
 
             <!--submit form starts-->
             <div class="container">
-                <form>
+                <form onsubmit="addRoom()">
                     <div class="row">
                         <div class="col-sm">
                             <div class="form-group">
@@ -108,46 +108,46 @@
                             </div>
                         </div>
                         <div class="col-sm">
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Αριθμός Υπνοδωματίων</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>    
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Αριθμός Υπνοδωματίων</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
-                            <div class="col-sm">
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Αριθμός Κρεβατιών</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                    </select>
-                                </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Αριθμός Κρεβατιών</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                </select>
                             </div>
-                            <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Αριθμός Μπάνιων</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                        </select>
-                                    </div>
-                                </div>    
                         </div>
-                        
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Αριθμός Μπάνιων</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
                     <!--number of visitors ends-->
                     <!--comment section starts-->
                     <div class="form-group">
@@ -165,19 +165,19 @@
                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                     </div>
                     <img id='img-upload' />
+                    <!--file selection ends-->
+                    <!--submit button starts-->
+                    <input type="submit" class="btn btn-secondary btn-lg"
+                        style="float: right; margin-top: 40px; background-color: #6495ed;" value="Καταχώρηση">
+                    <!--submit button ends-->
+                </form>
             </div>
-            <!--file selection ends-->
-            <!--submit button starts-->
-            <button type="submit" class="btn btn-secondary btn-lg"
-                style="float: right; margin-top: 40px; background-color: #6495ed;">Καταχώρηση</button>
-            <!--submit button ends-->
-            </form>
         </div>
         <!--submit form ends-->
-
-        <!--my own javascript-->
-        <script type="text/javascript" src="./js/app.js"></script>
-        <script type="text/javascript" src="./js/roomGenerator.js"></script>
+    </div>
+    <!--my own javascript-->
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/roomGenerator.js"></script>
 </body>
 
 </html>
