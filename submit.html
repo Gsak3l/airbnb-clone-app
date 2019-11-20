@@ -22,7 +22,8 @@
     </script>
     <!--Vollkorn font-->
     <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
-
+    <!--styles.css-->
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -112,21 +113,27 @@
                     <!--comment section ends-->
                     <!--file selection starts-->
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="validatedCustomFile" onchange="aleeert()" required>
-                        <label class="custom-file-label" for="validatedCustomFile">Επιλογή Εικόνας</label>
-                        <div class="invalid-feedback" >Example invalid custom file feedback</div>
-                    </div>
-                    <!--file selection ends-->
-                    <!--submit button starts-->
-                    <button type="submit" class="btn btn-secondary btn-lg" style="float: right; margin-top: 40px; background-color: #6495ed;">Καταχώρηση</button>
-                    <!--submit button ends-->
-                </form>
-            </div>
-            <!--submit form ends-->
 
-            <!--my own javascript-->
-            <script type="text/javascript" src="./js/app.js"></script>
-            <script type="text/javascript" src="./js/roomGenerator.js"></script>
+                    </div>
+                    <div class="input-group">
+                        <input type="file" class="custom-file-input" id="imgInp">
+                        <label class="custom-file-label" for="validatedCustomFile">Επιλογή Εικόνας</label>
+                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                    </div>
+                    <img id='img-upload' />
+            </div>
+            <!--file selection ends-->
+            <!--submit button starts-->
+            <button type="submit" class="btn btn-secondary btn-lg"
+                style="float: right; margin-top: 40px; background-color: #6495ed;">Καταχώρηση</button>
+            <!--submit button ends-->
+            </form>
+        </div>
+        <!--submit form ends-->
+
+        <!--my own javascript-->
+        <script type="text/javascript" src="./js/app.js"></script>
+        <script type="text/javascript" src="./js/roomGenerator.js"></script>
 </body>
 
 </html>
