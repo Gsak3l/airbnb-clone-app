@@ -24,10 +24,12 @@ function generateRooms() {
         });
     }
     console.log(rooms.length);
+    console.log(rooms[rooms.length]);
 }
 
 function createRoom() {
     rooms[rooms.length] = '<h1>I AM THE HERO OVER HERE</h1>';
+    console.log('room created successfully');
 }
 
 function randomize(roomArray) {
