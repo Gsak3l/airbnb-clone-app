@@ -23,6 +23,11 @@ function generateRooms() {
             aleeert();
         });
     }
+    console.log(rooms.length);
+}
+
+function createRoom() {
+    rooms[rooms.length] = '<h1>I AM THE HERO OVER HERE</h1>';
 }
 
 function randomize(roomArray) {
