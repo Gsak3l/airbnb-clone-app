@@ -30,9 +30,7 @@
 <body>
     <!--navbar starts-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">
-            <h1 style="color: #6495ed;">Dooking</h1>
-        </a>
+        <h1 style="color: #6495ed; cursor: pointer;" onclick="generateHome()">Dooking</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,19 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.html">
-                        <h5>Διαθέσιμα Δωμάτια</h5>
-                    </a>
+                    <h5 class="nav-link" style="cursor: pointer;" onclick="generateHome()">Διαθέσιμα Δωμάτια</h5>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./submit.html">
-                        <h5>Προσθήκη Δωματίου</h5>
-                    </a>
+                    <h5 class="nav-link" style="cursor: pointer;" onclick="generateSubmitForm()">Προσθήκη Δωματίου</h5>
                 </li>
             </ul>
         </div>
     </nav>
     <!--navbar ends-->
+
     <div class="container-fluid">
         <div class="px-lg-5">
 
@@ -70,12 +65,15 @@
             <div class="container">
                 <form onsubmit="createRoom()">
                     <div class="row">
+                        <!--Personal info section starts-->
+                        <!--surname-->
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="formGroupExampleInput">Επώνυμο</label>
                                 <input type="text" class="form-control" id="formGroupExampleInput">
                             </div>
                         </div>
+                        <!--name-->
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="formGroupExampleInput">Όνομα</label>
@@ -83,13 +81,17 @@
                             </div>
                         </div>
                     </div>
+                    <!--Email address-->
                     <div class="form-group">
                         <label for="exampleInputEmail1">Διεύθυνση Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="this@is.america">
                     </div>
-                    <!--number of visitors starts-->
+                    <!--Personal info section ends-->
+
                     <div class="row">
+
+                        <!--number of visitors starts-->
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Αριθμός Επισκεπτών</label>
@@ -107,6 +109,9 @@
                                 </select>
                             </div>
                         </div>
+                        <!--number of visitors ends-->
+
+                        <!--number of bedrooms starts-->
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Αριθμός Υπνοδωματίων</label>
@@ -118,9 +123,12 @@
                                 </select>
                             </div>
                         </div>
+                        <!--number of bedrooms ends-->
                     </div>
+
                     <div class="row">
                         <div class="col-sm">
+                            <!--number of beds starts-->
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Αριθμός Κρεβατιών</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
@@ -134,8 +142,10 @@
                                     <option>8</option>
                                 </select>
                             </div>
+                            <!--number of beds starts-->
                         </div>
                         <div class="col-sm">
+                            <!--number of baths starts-->
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Αριθμός Μπάνιων</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
@@ -145,6 +155,7 @@
                                     <option>4</option>
                                 </select>
                             </div>
+                            <!--number of baths ends-->
                         </div>
                     </div>
 
@@ -164,11 +175,12 @@
                         <label class="custom-file-label" for="validatedCustomFile">Επιλογή Εικόνας</label>
                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                     </div>
-                    <img id='img-upload' />
+                    <img id="img-upload" />
                     <!--file selection ends-->
                     <!--submit button starts-->
                     <input type="submit" class="btn btn-secondary btn-lg"
-                        style="float: right; margin-top: 40px; margin-bottom: 40px; background-color: #6495ed;" value="Καταχώρηση">
+                        style="float: right; margin-top: 40px; margin-bottom: 40px; background-color: #6495ed;"
+                        value="Καταχώρηση">
                     <!--submit button ends-->
                 </form>
             </div>
