@@ -1,6 +1,6 @@
 var rooms = new Array();
 rooms[0] = '<!--domatio pros enoikiasi mono--><div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="./img/1.jpg" alt="" class="img-fluid card-img-top"> <div class="p-4"> <h5> <a href="#" class="text-dark">Urban Luxury studio, close to the sea</a></h5> <p class="small text-muted mb-0">6 Επισκέπτες • 3 Υπνοδωμάτια • 2 Μπάνια • Πισίνα</p> <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> <p class="small mb-0">140€/Διανυκτέρευση</p> <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div> </div> </div> </div> </div><!--telos domatiou pros enoikiasi mono-->';
-rooms[1] = '<!--domatio pros antallagi mono--><div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="./img/2.jpg" alt="" class="img-fluid card-img-top"> <div class="p-4"> <h5> <a href="#" class="text-dark">Urban Cozy Studios</a></h5> <p class="small text-muted mb-0">4 Επισκέπτες • 2 Υπνοδωμάτια • 1 Μπάνιο • Wifi<div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> <p class="small mb-0">100€/Διανυκτέρευση</p> <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Ανταλλαγή</div> </div> </div> </div> </div><!--telos domatiou pros antallagi mono-->';
+rooms[1] = '<!--domatio pros antallagi mono--><div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="./img/2.jpg" alt="" class="img-fluid card-img-top"> <div class="p-4"> <h5> <a href="#" class="text-dark">Urban Cozy Studios</a></h5> <p class="small text-muted mb-0">4 Επισκέπτες • 2 Υπνοδωμάτια • 1 Μπάνιο • Wifi<div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> <p class="small mb-0"></p> <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Ανταλλαγή</div> </div> </div> </div> </div><!--telos domatiou pros antallagi mono-->';
 rooms[2] = '<!--domatio eite pros antallagi eite pros enoikiasi--><div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="./img/3.jpg" alt="" class="img-fluid card-img-top"> <div class="p-4"> <h5> <a href="#" class="text-dark">Golden Studio near Acropolis</a></h5> <p class="small text-muted mb-0">2 Επισκέπτες • Στούντιο • 1 Κρεβάτι • 1 Μπάνιο</p> <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> <p class="small mb-0">90€/Διανυκτέρευση</p> <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div> </div> </div> </div> </div><!--telos domatiou pros antallagi i pros enoikiasi-->';
 rooms[3] = '<!--domatio pros antallagi mono--><div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="./img/4.jpg" alt="" class="img-fluid card-img-top"> <div class="p-4"> <h5> <a href="#" class="text-dark">Petit Cozy Studio</a></h5> <p class="small text-muted mb-0">2 Επισκέπτες • Στούντιο • 1 Κρεβάτι • 1 Μπάνιο</p> <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> <p class="small mb-0"></p> <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Ανταλλαγή</div> </div> </div> </div> </div><!--telos domatiou pros antallagi mono-->';
 rooms[4] = '<!--domatio eite pros antallagi eite pros enoikiasi--><div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="./img/5.jpg" alt="" class="img-fluid card-img-top"> <div class="p-4"> <h5> <a href="#" class="text-dark">Central & Quiet at Acropolis</a></h5> <p class="small text-muted mb-0">5 Επισκέπτες • 2 Υπνοδωμάτια • 4 Κρεβατια • 1 Μπάνιο</p> <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"> <p class="small mb-0">90€/Διανυκτέρευση</p> <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div> </div> </div> </div> </div><!--telos domatiou pros antallagi i pros enoikiasi-->';
@@ -37,6 +37,26 @@ function createRoom() {
         + 'justify-content-between rounded-pill bg-light px-3 py-2 mt-4"><p class="small mb-0">'
         + document.getElementById('price').value + '€/Διανυκτέρευση</p><div class="badge badge-success px-3 rounded-pill '
         + 'font-weight-normal">Ανταλλαγή/Ενοικίαση</div></div></div></div></div>';
+    } else if(document.getElementById('transaction').value === 'Ενοικίαση') {
+        newRoom += '<div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="'
+        + image + '" alt="" class="img-fluid card-img-top"> <div class="p-4"><h5> <a href="#" class="text-dark">' 
+        + document.getElementById('title').value + '</a></h5><p class="small text-muted mb-0">' 
+        + document.getElementById('visNum').value + ' Επισκέπτες • ' + document.getElementById('bedroomNum').value 
+        + ' Υπνοδωμάτια • ' + document.getElementById('bedNum').value + ' Κρεβάτια • '
+        + document.getElementById('bathNum').value + ' Μπάνια</p><div class="d-flex align-items-center '
+        + 'justify-content-between rounded-pill bg-light px-3 py-2 mt-4"><p class="small mb-0">'
+        + document.getElementById('price').value + '€/Διανυκτέρευση</p><div class="badge badge-danger px-3 rounded-pill '
+        + 'font-weight-normal">Ενοικίαση</div></div></div></div></div>';
+    } else if(document.getElementById('transaction').value === 'Ανταλλαγή') {
+        newRoom += '<div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="'
+        + image + '" alt="" class="img-fluid card-img-top"> <div class="p-4"><h5> <a href="#" class="text-dark">' 
+        + document.getElementById('title').value + '</a></h5><p class="small text-muted mb-0">' 
+        + document.getElementById('visNum').value + ' Επισκέπτες • ' + document.getElementById('bedroomNum').value 
+        + ' Υπνοδωμάτια • ' + document.getElementById('bedNum').value + ' Κρεβάτια • '
+        + document.getElementById('bathNum').value + ' Μπάνια</p><div class="d-flex align-items-center '
+        + 'justify-content-between rounded-pill bg-light px-3 py-2 mt-4"><p class="small mb-0">'
+        + '</p><div class="badge badge-primary px-3 rounded-pill '
+        + 'font-weight-normal">Ενοικίαση</div></div></div></div></div>';
     }
     rooms[rooms.length] = newRoom;
     generateHome();
