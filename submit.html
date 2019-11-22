@@ -189,7 +189,8 @@
                     <!--image input field starts-->
                     <div class="form-group">
                         <h5>Προσθήκη Εικόνας</h5>
-                        <input type="file" class="form-control-file" id="image">
+                        <input type="file" class="form-control-file" onchange="readURL(this)" id="image">
+                        <img id="imagePreview" style="width: 200px; margin-top: 10px; margin-bottom: 10px;" src="" alt=""/>
                     </div>
                     <!--image input field ends-->
                     <!--submit button starts-->
