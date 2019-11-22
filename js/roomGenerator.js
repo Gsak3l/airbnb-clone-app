@@ -26,10 +26,21 @@ function generateRooms() {
 }
 
 function createRoom() {
-    rooms[rooms.length] = '<img src="' + image +  '" alt="">';
+    var newRoom = '';
+    if(document.getElementById('transaction').value === 'Ανταλλαγή/Ενοικίαση') {
+        newRoom += '<div class="col-xl-3 col-lg-4 col-md-6 mb-4"> <div class="bg-white rounded shadow-sm"><img src="'
+        + image + '" alt="" class="img-fluid card-img-top"> <div class="p-4"><h5> <a href="#" class="text-dark">' 
+        + document.getElementById('title').value + '</a></h5><p class="small text-muted mb-0">' 
+        + document.getElementById('visNum').value + ' Επισκέπτες • ' + document.getElementById('bedroomNum').value 
+        + ' Υπνοδωμάτια • ' + document.getElementById('bedNum').value + ' Κρεβάτια • '
+        + document.getElementById('bathNum').value + ' Μπάνια</p><div class="d-flex align-items-center '
+        + 'justify-content-between rounded-pill bg-light px-3 py-2 mt-4"><p class="small mb-0">'
+        + document.getElementById('price').value + '€/Διανυκτέρευση</p><div class="badge badge-success px-3 rounded-pill '
+        + 'font-weight-normal">Ανταλλαγή/Ενοικίαση</div></div></div></div></div>';
+    }
+    rooms[rooms.length] = newRoom;
     generateHome();
     generateRooms();
-    console.log(rooms.length);
 }
 
 function randomize(roomArray) {
