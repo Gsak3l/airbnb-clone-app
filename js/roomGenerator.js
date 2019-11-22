@@ -26,9 +26,10 @@ function generateRooms() {
 }
 
 function createRoom() {
-    rooms[rooms.length] = '<h1>I AM THE HERO OVER HERE</h1>';
+    rooms[rooms.length] = '<img src="' + image +  '" alt="">';
     generateHome();
     generateRooms();
+    console.log(rooms.length);
 }
 
 function randomize(roomArray) {
