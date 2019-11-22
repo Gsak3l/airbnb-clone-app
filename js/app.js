@@ -9,3 +9,19 @@ function generateHome() {
 function generateSubmitForm() {
     document.getElementById('mainContainer').innerHTML = submitPage;
 }
+
+function getFormInfo(info) {
+    console.log(document.getElementById('surname').value);
+    console.log(document.getElementById('name').value);
+    console.log(document.getElementById('mail').value);
+    console.log(document.getElementById('transaction').value);
+    console.log(document.getElementById('price').value);
+    console.log(document.getElementById('visNum').value);
+    console.log(document.getElementById('bedroomNum').value);
+    console.log(document.getElementById('bedNum').value);
+    console.log(document.getElementById('bathNum').value);
+    console.log(document.getElementById('comment').value);
+    
+    
+    console.log("we got everything from the form");
+}

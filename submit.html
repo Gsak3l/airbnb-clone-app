@@ -63,28 +63,28 @@
 
             <!--submit form starts-->
             <div class="container">
-                <form onsubmit="createRoom()">
+                <form onsubmit="getFormInfo(this)">
                     <div class="row">
                         <!--Personal info section starts-->
                         <!--surname-->
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="formGroupExampleInput">Επώνυμο</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <input type="text" class="form-control" id="surname">
                             </div>
                         </div>
                         <!--name-->
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="formGroupExampleInput">Όνομα</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <input type="text" class="form-control" id="name">
                             </div>
                         </div>
                     </div>
                     <!--Email address-->
                     <div class="form-group">
                         <label for="exampleInputEmail1">Διεύθυνση Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="mail" aria-describedby="emailHelp"
                             placeholder="this@is.america">
                     </div>
                     <!--Personal info section ends-->
@@ -94,7 +94,7 @@
                             <!--kind of transaction starts-->
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Δωμάτιο προς</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="transaction">
                                     <option>Ανταλλαγή</option>
                                     <option>Ενοικίαση</option>
                                     <option>Ανταλλαγή/Ενοικίαση</option>
@@ -103,8 +103,8 @@
                             <!--kind of transaction ends-->
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="inputZip">Κόστος σε € (Προαιρετικό)</label>
-                            <input type="text" class="form-control" id="inputZip">
+                            <label for="inputZip" id="price">Κόστος σε € (Προαιρετικό)</label>
+                            <input type="text" class="form-control" id="price">
                         </div>
                     </div>
                     <!--room options section ends-->
@@ -114,7 +114,7 @@
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Αριθμός Επισκεπτών</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="visNum">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -134,7 +134,7 @@
                         <div class="col-sm">
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Αριθμός Υπνοδωματίων</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="bedroomNum">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -150,7 +150,7 @@
                             <!--number of beds starts-->
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Αριθμός Κρεβατιών</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="bedNum">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -167,7 +167,7 @@
                             <!--number of baths starts-->
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Αριθμός Μπάνιων</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" id="bathNum">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -182,13 +182,14 @@
                     <!--comment section starts-->
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Σχόλια</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            id="comment"></textarea>
                     </div>
                     <!--comment section ends-->
                     <!--image input field starts-->
                     <div class="form-group">
                         <h5>Προσθήκη Εικόνας</h5>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="file" class="form-control-file" id="image">
                     </div>
                     <!--image input field ends-->
                     <!--submit button starts-->
