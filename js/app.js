@@ -10,6 +10,7 @@ function generateHome() {
 function generateSubmitForm() {
     document.getElementById('mainContainer').innerHTML = submitPage;
 }
+
 function getFormInfo() {
 
     console.log(document.getElementById('surname').value);
@@ -33,7 +34,7 @@ function readURL(input) {
         reader.onload = function (e) {
             $('#imagePreview')
                 .attr('src', e.target.result);
-                image = e.target.result;
+            image = e.target.result;
         };
 
         reader.readAsDataURL(input.files[0]);
