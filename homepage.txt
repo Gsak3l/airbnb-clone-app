@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dooking, an app not by Booking</title>
+  <!--font-awesome-->
+  <link rel="stylesheet" href="./css/font-awesome.min.css" />
+  <!--jquery-->
+  <script type="text/javascript" src="./js/jquery-3.3.1.slim.min.js"></script>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!--Ubuntu font-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
+  <!--styles.css-->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!--navbar starts-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h1 style="color: #6495ed; cursor: pointer;" onclick="generateHome()">Dooking</h1> <button class="navbar-toggler"
+      type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <h5 class="nav-link" style="cursor: pointer;" onclick="generateHome()">Διαθέσιμα Δωμάτια</h5>
+        </li>
+        <li class="nav-item">
+          <h5 class="nav-link" style="cursor: pointer;" onclick="generateSubmitForm()">Προσθήκη Δωματίου</h5>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--navbar ends-->
+  <div class="container-fluid">
+    <div class="px-lg-5">
+      <!--header starts-->
+      <div class="row py-5">
+        <div class="col-lg-12 mx-auto">
+          <div class="text-white p-5 shadow-sm rounded banner">
+            <h1 class="display-4" style="color:#000;"><b>Διαθέσιμα Δωμάτια προς Ανταλλαγή ή προς Ενοικίαση</b></h1>
+          </div>
+        </div>
+      </div>
+      <!--header ends-->
+      <!--rooms section starts-->
+      <div class="row" id="roomSection">
+        <!--domatio pros enoikiasi mono-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/1.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Urban Luxury studio, close to the sea</a></h5>
+              <p class="small text-muted mb-0">6 Επισκέπτες • 3 Υπνοδωμάτια • 2 Μπάνια • Πισίνα</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">140€/Διανυκτέρευση</p>
+                <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros enoikiasi mono-->
+
+        <!--domatio pros antallagi mono-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/2.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Urban Cozy Studios</a></h5>
+              <p class="small text-muted mb-0">4 Επισκέπτες • 2 Υπνοδωμάτια • 1 Μπάνιο • Wifi<div
+                  class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                  <p class="small mb-0">100€/Διανυκτέρευση</p>
+                  <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Ανταλλαγή</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi mono-->
+
+        <!--domatio eite pros antallagi eite pros enoikiasi-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/3.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Golden Studio near Acropolis</a></h5>
+              <p class="small text-muted mb-0">2 Επισκέπτες • Στούντιο • 1 Κρεβάτι • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
+                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi i pros enoikiasi-->
+
+        <!--domatio pros antallagi mono-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/4.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Petit Cozy Studio</a></h5>
+              <p class="small text-muted mb-0">2 Επισκέπτες • Στούντιο • 1 Κρεβάτι • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"></p>
+                <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Ανταλλαγή</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi mono-->
+
+        <!--domatio eite pros antallagi eite pros enoikiasi-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/5.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Central & Quiet at Acropolis</a></h5>
+              <p class="small text-muted mb-0">5 Επισκέπτες • 2 Υπνοδωμάτια • 4 Κρεβατια • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
+                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi i pros enoikiasi-->
+
+        <!--domatio pros antallagi mono-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/6.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Artistic House near Acropolis</a></h5>
+              <p class="small text-muted mb-0">2 Επισκέπτες • 1 Υπνοδωμάτιο • 1 Κρεβάτι • 1,5 Μπάνια</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"></p>
+                <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Ανταλλαγή</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi mono-->
+
+        <!--domatio eite pros antallagi eite pros enoikiasi-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/7.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Amazing view at the park</a></h5>
+              <p class="small text-muted mb-0">4 Επισκέπτες • 2 Υπνοδωμάτια • 4 Κρεβάτια • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
+                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi i pros enoikiasi-->
+
+        <!--domatio pros antallagi mono-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/8.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Keramikos Cosy Nest</a></h5>
+              <p class="small text-muted mb-0">2 Επισκέπτες • 1 Υπνοδωμάτιο • 1 Κρεβάτι • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0"></p>
+                <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Ανταλλαγή</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi mono-->
+
+        <!--domatio pros enoikiasi mono-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/9.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Student Room with Acropolis View</a></h5>
+              <p class="small text-muted mb-0">1 Επισκέπτης • 1 Χώρος • 1 Κρεβάτι • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">50€/Διανυκτέρευση</p>
+                <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros enoikiasi mono-->
+
+        <!--domatio eite pros antallagi eite pros enoikiasi-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/10.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Apartment next to Museum</a></h5>
+              <p class="small text-muted mb-0">2 Επισκέπτες • 1 Υπνοδωμάτιο • 1 Κρεβατια • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
+                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi i pros enoikiasi-->
+
+        <!--domatio eite pros antallagi eite pros enoikiasi-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/11.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">In the heart of Athens</a></h5>
+              <p class="small text-muted mb-0">4 Επισκέπτες • 2 Υπνοδωμάτια • 2 Κρεβάτια • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">90€/Διανυκτέρευση</p>
+                <div class="badge badge-success px-3 rounded-pill font-weight-normal">Ανταλλαγή/Ενοικίαση</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros antallagi i pros enoikiasi-->
+
+        <!--domatio pros enoikiasi mono-->
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white rounded shadow-sm"><img src="./img/12.jpg" alt="" class="img-fluid card-img-top">
+            <div class="p-4">
+              <h5> <a href="#" class="text-dark">Perfect Placed City Apartment</a></h5>
+              <p class="small text-muted mb-0">3 Επισκέπτες • 1 Υπνοδωμάτιο • 2 Κρεβάτια • 1 Μπάνιο</p>
+              <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                <p class="small mb-0">120€/Διανυκτέρευση</p>
+                <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Ενοικίαση</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--telos domatiou pros enoikiasi mono-->
+      </div>
+      <!--rooms section ends-->
+      <!--submit button starts-->
+      <div class="btn btn-dark px-5 py-3 text-uppercase" style="float: right; margin-bottom: 50px; cursor: pointer;"
+        onclick="generateSubmitForm()">Καταχωρηση Τωρα</div>
+    </div>
+    <!--submit button ends-->
+  </div>
+  </div>
+
+  <!--my own javascript-->
+  <script type="text/javascript" src="./js/app.js"></script>
+  <script type="text/javascript" src="./js/roomGenerator.js"></script>
+</body>
+
+</html>
