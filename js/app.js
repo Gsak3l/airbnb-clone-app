@@ -71,7 +71,6 @@ function readURL(input) {
                 .attr('src', e.target.result);
             image = e.target.result;
         };
-
         reader.readAsDataURL(input.files[0]);
     }
 }
