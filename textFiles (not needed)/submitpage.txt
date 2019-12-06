@@ -73,7 +73,7 @@
           </div>
           <!--Email address-->
           <div class="form-group"> <label for="exampleInputEmail1">Διεύθυνση Email</label> <input type="email"
-              class="form-control" id="mail" aria-describedby="emailHelp" placeholder="this@is.america"> </div>
+              class="form-control" id="mail" aria-describedby="emailHelp" placeholder="username@email.something"> </div>
           <!--Personal info section ends-->
           <!--room options section starts-->
           <div class="row">

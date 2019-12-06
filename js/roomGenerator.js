@@ -125,7 +125,7 @@ function createRoom() {
             '</p><div class="badge badge-primary px-3 rounded-pill ' +
             'font-weight-normal">Ανταλλαγή</div></div></div></div></div>';
     }
+    image = "";
     rooms[rooms.length] = newRoom;
     generateHome();
-    generateRooms();
 }

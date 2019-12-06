@@ -26,13 +26,12 @@ var submitPage = '<!--navbar starts--> <nav class="navbar navbar-expand-lg navba
     'class="form-control" rows="2" id="title"></textarea> </div> <!--title section ends--> <!--image input field starts--> <div class="form-group"> <h5>Προσθήκη Εικόνας</h5> <input type="file" class="form-control-file" onchange="readURL(this)" ' +
     'id="image"> <img id="imagePreview" style="width: 200px; margin-top: 10px; margin-bottom: 10px;" src="" alt="" /> </div> <!--image input field ends--> <!--submit button starts--> <input type="submit" class="btn btn-secondary btn-lg" ' +
     'style="float: right; margin-bottom: 40px; background-color: #6495ed;" value="Καταχώρηση"> <!--submit button ends--> </form> </div> </div> <!--submit form ends-->';
-var image;
+var image = "";
 
 function generateHomeWithTimeout() {
     setTimeout(
         function () {
-            document.getElementById('mainContainer').innerHTML = homePage;
-            generateRooms();
+            generateHome();
         }, 5000
     )
 }
@@ -45,9 +44,8 @@ function generateHome() {
 function generateSubmitForm() {
     document.getElementById('mainContainer').innerHTML = submitPage;
 }
-
+/*
 function getFormInfo() {
-
     console.log(document.getElementById('surname').value);
     console.log(document.getElementById('name').value);
     console.log(document.getElementById('mail').value);
@@ -60,7 +58,7 @@ function getFormInfo() {
     console.log(document.getElementById('title').value);
 
     console.log("we got everything from the form");
-}
+}*/
 
 function readURL(input) {
     if (input.files && input.files[0]) {
